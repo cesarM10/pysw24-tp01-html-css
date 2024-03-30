@@ -59,7 +59,8 @@ nav ul li:hover {
 }
 
 header{
-  background-image: url("./img/headerJujuy.jpg");
+  background-image: url("./img/header2Jujuy.jpg");
+  /* filter: blur(10px); */
   height: 50vh;
   
   background-size: cover;
