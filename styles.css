@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap");
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  color: white;
+}
+
+h1, h2, h3, h4, h5{
+    margin: 0;
+}
+
+ul li{
+    list-style-type: none;
+}
+nav{
+    padding: 0.5em;
+    background-color: orange;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 2em;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Aplica una transición suave al transformar el elemento */
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 1em;
+}
+
+nav ul li:hover {
+    transform: scale(1.2); /* Amplía el elemento al pasar el mouse por encima */
+}
+
+.nav-text{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    align-items: baseline;
+}
+
+
+footer {
+  background-color: rgb(232, 117, 26);
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0.5em;
+}
+
+footer ul li{
+  list-style: none;
+  color: white;
+  margin: 0.5em;
+  font-size: 1.5em;
+  transition: transform 0.3s ease; /* Aplica una transición suave al transformar el elemento */
+}
+footer ul li:hover {
+  color: rgb(253, 164, 3);
+  transform: scale(1.2); /* Amplía el elemento al pasar el mouse por encima */
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+footer img{
+  margin: 0.5em;
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease; /* Aplica una transición suave al transformar el elemento */
+}
+
+footer a img:hover{
+    background-color: rgb(253, 164, 3);
+    transform: scale(1.2); /* Amplía el elemento al pasar el mouse por encima */
+}
+
