@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
 /* link paleta de colores */
 /* https://colorhunt.co/palette/fda403e8751a898121e5c287 */
 
@@ -9,60 +9,64 @@
   font-style: normal;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: gray;
   color: white;
 }
 
-h1, h2, h3, h4, h5{
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
 }
 
-ul li{
-    list-style-type: none;
+ul li {
+  list-style-type: none;
 }
-nav{
-    padding: 0.5em;
-    background-color: orange;
-    display: flex;
+nav {
+  padding: 0.5em;
+  background-color: orange;
+  display: flex;
 }
 
 nav ul {
-    list-style-type: none;
-    padding-left: 2em;
-    margin: 0;
+  list-style-type: none;
+  padding-left: 2em;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    transition: transform 0.3s ease; /* Aplica una transición suave al transformar el elemento */
+  display: inline-block;
+  transition: transform 0.3s ease; /* Aplica una transición suave al transformar el elemento */
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    display: block;
-    padding: 1em;
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block;
+  padding: 1em;
 }
 
 nav ul li:hover {
-    transform: scale(1.2); /* Amplía el elemento al pasar el mouse por encima */
+  transform: scale(1.2); /* Amplía el elemento al pasar el mouse por encima */
 }
 
-.nav-text{
-    display: flex;
-    flex-direction: row;
-    padding: 1em;
-    align-items: baseline;
+.nav-text {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  align-items: baseline;
 }
 
-header{
+header {
   background-image: url("./img/header2Jujuy.jpg");
   /* filter: blur(10px); */
   height: 50vh;
-  
+
   background-size: cover;
   background-position: 0;
   display: flex;
@@ -71,55 +75,103 @@ header{
   align-items: center;
 }
 
-header h2{
+header h2 {
   font-size: 5em;
 }
 
-header p{
+header p {
   font-size: 1.5em;
   margin-left: 2em;
   margin-right: 2em;
 }
 
+.container {
+  display: flex;
+}
+section {
+  width: 80%;
+  height: auto;
+  background-color: rgb(229, 194, 135);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section h3{
+  font-size: 3.5em;
+}
+
+.tarjeta {
+  background-color: rgb(137, 129, 33);
+  width: 80%;
+  height: max-content;
+  display: flex;
+  border: 1px double;
+  border-style: solid;
+  border-color: black;
+  border-radius: 12px;
+  margin: 1em;
+  overflow: hidden;
+}
+
+.tarjeta img {
+  width: 50%;
+  max-width: 100%;
+}
+
+.tarjeta .texto{
+  padding: 1em;
+}
+
+.texto h4{
+font-size: 1.8em;
+}
+
+.texto p{
+  font-size: 1.1em;
+}
+aside {
+  width: 20%;
+}
 
 
+aside{
+  background-color: rgb(137, 129, 33);
+}
 footer {
   background-color: rgb(232, 117, 26);
   color: rgb(255, 255, 255);
-  text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   font-family: "Edu NSW ACT Foundation", cursive;
   font-optical-sizing: auto;
   font-style: normal;
-  padding: 0.5em;
 }
 
-footer ul li{
-  list-style: none;
-  color: white;
-  margin: 0.5em;
-  font-size: 1.5em;
+footer ul li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
   transition: transform 0.3s ease; /* Aplica una transición suave al transformar el elemento */
 }
+footer ul li a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+}
+
 footer ul li:hover {
   color: rgb(253, 164, 3);
   transform: scale(1.2); /* Amplía el elemento al pasar el mouse por encima */
 }
 
-footer ul li a{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-footer img{
-  margin: 0.5em;
+footer img {
   width: 60px;
   height: 60px;
   transition: transform 0.3s ease; /* Aplica una transición suave al transformar el elemento */
 }
 
-footer a img:hover{
-    background-color: rgb(253, 164, 3);
-    transform: scale(1.2); /* Amplía el elemento al pasar el mouse por encima */
+footer a img:hover {
+  transform: scale(1.2); /* Amplía el elemento al pasar el mouse por encima */
 }
-
