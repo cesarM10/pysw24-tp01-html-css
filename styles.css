@@ -41,7 +41,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  transition: transform 0.3s ease; /* Aplica una transición suave al transformar el elemento */
+  transition: transform 0.3s ease; 
 }
 
 nav ul li a {
@@ -52,7 +52,7 @@ nav ul li a {
 }
 
 nav ul li:hover {
-  transform: scale(1.2); /* Amplía el elemento al pasar el mouse por encima */
+  transform: scale(1.2);
 }
 
 .nav-text {
@@ -60,6 +60,7 @@ nav ul li:hover {
   flex-direction: row;
   padding: 1em;
   align-items: baseline;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
 }
 
 header {
@@ -77,19 +78,21 @@ header {
 
 header h2 {
   font-size: 5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
 }
 
 header p {
   font-size: 1.5em;
   margin-left: 2em;
   margin-right: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
 }
 
 .container {
   display: flex;
 }
 section {
-  width: 80%;
+  width: 80vw;
   height: auto;
   background-color: rgb(229, 194, 135);
   display: flex;
@@ -98,6 +101,7 @@ section {
 }
 section h3{
   font-size: 3.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
 }
 
 .tarjeta {
@@ -115,29 +119,75 @@ section h3{
 }
 
 .tarjeta img {
-  width: 50%;
-  max-width: 100%;
+  width: 300px;
+  object-fit: cover;
 }
 
 .tarjeta .texto{
   padding: 1em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
 }
 
 .texto h4{
 font-size: 1.8em;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
 }
 
 .texto p{
   font-size: 1.1em;
-}
-aside {
-  width: 20%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
 }
 
 
 aside{
   background-color: rgb(137, 129, 33);
 }
+
+.slideshow {
+  width: 25vw; 
+  height: 100vh; 
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover; /* Ajusta la imagen para cubrir completamente el slide */
+  animation: slide 10s infinite alternate; 
+}
+
+.slide:nth-child(1) {
+  animation: slide 15s infinite 0s alternate; 
+}
+
+.slide:nth-child(2) {
+  animation: slide 15s infinite 5s alternate; 
+}
+
+.slide:nth-child(3) {
+  animation: slide 15s infinite 10s alternate; 
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+aside iframe{
+  position: relative;
+  width: 100%;
+}
+
 footer {
   background-color: rgb(232, 117, 26);
   color: rgb(255, 255, 255);
@@ -154,25 +204,26 @@ footer ul li {
   margin: 0;
   padding: 0;
   text-align: center;
-  transition: transform 0.3s ease; /* Aplica una transición suave al transformar el elemento */
+  transition: transform 0.3s ease; 
 }
 footer ul li a {
   font-size: 1.5em;
   text-decoration: none;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
 }
 
 footer ul li:hover {
   color: rgb(253, 164, 3);
-  transform: scale(1.2); /* Amplía el elemento al pasar el mouse por encima */
+  transform: scale(1.2); 
 }
 
 footer img {
   width: 60px;
   height: 60px;
-  transition: transform 0.3s ease; /* Aplica una transición suave al transformar el elemento */
+  transition: transform 0.3s ease; 
 }
 
 footer a img:hover {
-  transform: scale(1.2); /* Amplía el elemento al pasar el mouse por encima */
+  transform: scale(1.2); 
 }
