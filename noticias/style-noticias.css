@@ -52,7 +52,7 @@ section {
 }
 
 .slide:nth-child(6) {
-  animation-delay: 25s; /* Inicia en el segundo 25 */
+  animation-delay: 10s; /* Inicia en el segundo 25 */
 }
 
 @keyframes slide {
