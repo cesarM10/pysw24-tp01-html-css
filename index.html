@@ -4,118 +4,307 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="shortcut icon"
-      href="./img/jujuy - 64x63.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
     <title>TP01 - HTML Y CSS</title>
   </head>
   <body>
     <nav>
       <div>
         <a href="./index.html">
-          <img src="./img/jujuy - 64x63.png" alt="Icono Visita Jujuy" />
+          <img src="./img/logo.png" alt="Icono Visita Jujuy" />
         </a>
       </div>
       <div class="nav-text">
-        <h1>Visitá Jujuy</h1>
+        <h1 class="great-vibes-regular">
+          Poder Judicial de la Provincia de Jujuy
+        </h1>
         <ul>
           <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./noticias.html">Noticias</a></li>
-          <li><a href="./galeria.html">Galeria</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./contacto/contacto.html">Contacto</a></li>
+          <li><a href="./noticias/noticias.html">Noticias</a></li>
+          
         </ul>
       </div>
     </nav>
-    <header>
-      <h2 class="museomoderno">Bienvenidos a Jujuy</h2>
-      <p class="museomoderno">
-        ¡Tierra de colores y contrastes! Ubicada en el norte de Argentina, Jujuy
-        es un destino que cautiva con su diversidad cultural, paisajes
-        impresionantes y una rica herencia histórica.
-      </p>
-    </header>
     <div class="container">
+      <header>
+        <hgroup>
+          <h2>Plataforma Digital de Gestión Judicial</h2>
+          <h3>Expediente Electrónico del Poder Judicial de Jujuy</h3>
+        </hgroup>
+      </header>
+
       <section>
-        <h3>Regiones de Jujuy</h3>
-        <div class="tarjeta">
-          <img src="./img/puna-susques.jpg" alt="Puna" />
+        <a
+          class="a-link"
+          href="index.html#ingresoDemandas"
+        >
+          <div class="card">
+            <div class="text-container">
+              <div class="frente">
+                <img src="./img/documento.png" alt="Campana" />
+                <p>
+                  INGRESO DE DEMANDAS ELECTRONICAS POR MESA GENERAL DE ENTRADA
+                </p>
+              </div>
 
-          <div class="texto">
-            <h4>PUNA</h4>
-            <p>
-              Es una palabra de origen quechua y en español significa «tierra
-              elevada y fría». En esta región vas a estar cerca del cielo, con
-              alturas que pueden superar los 5.000 msnm. Es probable que al
-              principio padezcas el llamado «mal de altura» o puna, pero con los
-              días el cuerpo suele adaptarse. Mientras tanto, siempre tendrás a
-              mano unas hojas, caramelos o té de coca. Aquí es muy común la
-              formación de lagunas, como la de Pozuelos y la de Guayatatoc, y
-              salares, como las Salinas Grandes.
-            </p>
+              <div class="oculto">
+                <h2>
+                  INGRESO DE DEMANDAS ELECTRONICAS POR MESA GENERAL DE ENTRADA
+                </h2>
+                <p>
+                  La Mesa General de Entradas, Estadística y Registro Virtual,
+                  tiene por fin reducir el uso y manipulación de papel en las
+                  presentaciones iniciales de demandas, disminuir la circulación
+                  de personas en dependencias del Poder Judicial y ser el primer
+                  paso hacia la formación del “expediente digital”
+                </p>
+              </div>
+            </div>
+
+            <div class="pie">
+              <p>Ver más...</p>
+            </div>
           </div>
-        </div>
+        </a>
 
-        <div class="tarjeta">
-          <img src="./img/yungas-parque-nacional-calilegua.jpg" alt="Yungas" />
-          <div class="texto">
-            <h4>YUNGAS</h4>
-            <p>
-              Las Yungas se encuentras en el este de la provincia. Se caracterizan por la presencia de selvas de montaña o “nuboselvas”. Tienen una gran variedad de ambientes que conforman diferentes pisos de vegetación. La altitud va desde los 400 hasta más de 3.000 msnm. Hay más de 200 especies de árboles, 80 variedades de helechos, 100 especies de mamíferos, 500 de aves y más de 30 de anfibios. También conviven diferentes grupos culturales, siendo uno de los de mayor multiplicidad étnica de la Argentina; y hogar de los grupos kollas, chané, guaraní, ocloyas y wichis, entre otros. Aquí encontraremos pueblos que conviven como comunidad. Las Yungas son consideradas como uno de los ambientes con mas alta biodiversidad de Argentina, junto a la Selva Paranaense.
-            </p>
+        <a
+          class="a-link"
+          href="index.html#presentacionDigital"
+        >
+          <div class="card">
+            <div class="text-container">
+              <div class="frente">
+                <img src="./img/word.png" alt="Campana" />
+                <p>PRESENTACIONE DE ESCRITOS JUDICIALES</p>
+              </div>
+
+              <div class="oculto">
+                <h2>PRESENTACIONE DE ESCRITOS JUDICIALES</h2>
+                <p>
+                  Las presentaciones que realicen las partes, letrados y
+                  auxiliares de justicia, serán efectuadas en forma electrónica
+                  a través del S.I.G.J. Estas deberán realizarse adjuntando el
+                  escrito correspondiente con firma ológrafa digitalizado en
+                  formato PDF o con archivos adjuntos rubricados con firma
+                  electrónica y/o digital.
+                </p>
+              </div>
+            </div>
+
+            <div class="pie">
+              <p>Ver más...</p>
+            </div>
           </div>
-        </div>
+        </a>
 
-        <div class="tarjeta">
-          <img src="./img/quebrada-maimara.jpg" alt="Quebrada" />
-          <div class="texto">
-            <h4>QUEBRADA</h4>
-            <p>
-              La Quebrada de Humahuaca es la famosa de la familia. Fue nombrada
-              Patrimonio cultural y natural de la humanidad por la UNESCO en el
-              año 2003 por su importancia cultural e histórica, sus atracciones
-              turísticas, paisajes y sitios arqueológicos. Históricamente sirvió
-              de ruta a los Incas. Fue paso obligado de expedicionarios y
-              colonizadores y una importante ruta comercial en la etapa
-              virreinal. Ha funcionado, hasta hoy, como permanente vía de
-              interacción, vinculando territorios y culturas distantes.
-            </p>
+        <a
+          class="a-link"
+          href="index.html#notificacionesElectronicas"
+        >
+          <div class="card">
+            <div class="text-container">
+              <div class="frente">
+                <img src="./img/campana.png" alt="Campana" />
+                <p>NOTIFICACIONES ELECTRONICAS</p>
+              </div>
+
+              <div class="oculto">
+                <h2>NOTIFICACIONES ELECTRONICAS</h2>
+                <p>
+                  Las resoluciones indicadas en los artículos 155 del C.P.
+                  Civil; 193 del C.P. Penal, 34 del C.P. del Trabajo, se
+                  notificarán a través del S.I.G.J.; con excepción de toda otra
+                  notificación que corresponda efectuarse en el domicilio real y
+                  las que, por disposición del juez o tribunal, deban ser
+                  notificadas por otro medio.
+                </p>
+              </div>
+            </div>
+
+            <div class="pie">
+              <p>Ver más...</p>
+            </div>
           </div>
-        </div>
+        </a>
 
-        <div class="tarjeta">
-          <img src="./img/valle-potrero-de-yala-2.jpg" alt="Valles" />
-          <div class="texto">
-            <h4>VALLE</h4>
-            <p>
-              A medida que bajamos nos vamos poniendo más verdes, más cálidos y
-              más húmedos. Así que si no tenés los labios partidos,
-              ¡felicitaciones!, estás en los valles o en las yungas. Ya no
-              necesitás hidratarlos… pero ¡ojo!, tenés que protegerte de los
-              mosquitos. La zona de los valles ocupan la región centro-sur de la
-              provincia. Aquí encontraremos vertientes de aguas calientes y
-              frías, lagunas, diques y paisajes verdes y frondosos. Una enorme
-              franja de altas montañas encierra el valle de Jujuy, que está
-              surcado por abundantes cursos de agua y cubierto por bosques. Las
-              alturas van de los 500 a 2.000 msnm. El clima es templado durante
-              casi todo el año, aunque puede haber nevadas ocasionales en el
-              invierno. Si, en Jujuy nieva.
-            </p>
+        <a
+          class="a-link"
+          href="index.html#diligenciasColaborativas"
+        >
+          <div class="card">
+            <div class="text-container">
+              <div class="frente">
+                <img src="./img/libro.png" alt="Campana" />
+                <p>DILIGENCIAS COLABORATIVAS</p>
+              </div>
+
+              <div class="oculto">
+                <h2>DILIGENCIAS COLABORATIVAS</h2>
+                <p>
+                  Permite a los abogados y defensores oficiales, elaborar y
+                  presentar digitalmente, cédulas de notificación, mandamientos
+                  y oficios colaborativos previstos en los artículos 50 y 72 del
+                  C.P.C., en las dependencias judiciales habilitadas. Una vez
+                  recibidas las diligencias, magistrados y secretarios las
+                  controlan y devuelven firmadas electrónicamente, para que los
+                  letrados las impriman y presenten en los organismos
+                  correspondientes..
+                </p>
+              </div>
+            </div>
+
+            <div class="pie">
+              <p>Ver más...</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="a-link"
+          href="index.html#diligenciasColaborativas"
+        >
+          <div class="card">
+            <div class="text-container">
+              <div class="frente">
+                <img src="./img/libro.png" alt="Campana" />
+                <p>DILIGENCIAS COLABORATIVAS</p>
+              </div>
+
+              <div class="oculto">
+                <h2>DILIGENCIAS COLABORATIVAS</h2>
+                <p>
+                  Permite a los abogados y defensores oficiales, elaborar y
+                  presentar digitalmente, cédulas de notificación, mandamientos
+                  y oficios colaborativos previstos en los artículos 50 y 72 del
+                  C.P.C., en las dependencias judiciales habilitadas. Una vez
+                  recibidas las diligencias, magistrados y secretarios las
+                  controlan y devuelven firmadas electrónicamente, para que los
+                  letrados las impriman y presenten en los organismos
+                  correspondientes..
+                </p>
+              </div>
+            </div>
+
+            <div class="pie">
+              <p>Ver más...</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="a-link"
+          href="index.html#diligenciasColaborativas"
+        >
+          <div class="card">
+            <div class="text-container">
+              <div class="frente">
+                <img src="./img/libro.png" alt="Campana" />
+                <p>DILIGENCIAS COLABORATIVAS</p>
+              </div>
+
+              <div class="oculto">
+                <h2>DILIGENCIAS COLABORATIVAS</h2>
+                <p>
+                  Permite a los abogados y defensores oficiales, elaborar y
+                  presentar digitalmente, cédulas de notificación, mandamientos
+                  y oficios colaborativos previstos en los artículos 50 y 72 del
+                  C.P.C., en las dependencias judiciales habilitadas. Una vez
+                  recibidas las diligencias, magistrados y secretarios las
+                  controlan y devuelven firmadas electrónicamente, para que los
+                  letrados las impriman y presenten en los organismos
+                  correspondientes..
+                </p>
+              </div>
+            </div>
+
+            <div class="pie">
+              <p>Ver más...</p>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <section>
+        <article id="ingresoDemandas">
+          <h3>Ingreso de demandas electrónicas por mesa general de entradas</h3>
+          <p>
+            La presentación de demandas en la Mesa General de Entradas Virtual -con acompañamiento de escrito y demás documentación requerida en formato digital- se habilitaron para las "Dependencias Judiciales Habilitadas" . En este sentido se aclara, que la RESOLUCION Nº 63-PSTJ-2020, establece que a partir del día lunes 21 de septiembre de 2020, sólo se recibirán presentaciones de escritos judiciales digitales de las "Dependencias Judiciales Habilitadas" . Las presentaciones de nuevas demandas en la Mesa General de Entradas continúaran habilitadas hasta tanto se incorporen de manera progresiva los otros fueros a ésta metodología; las demandas a iniciarse en ellos se efectuarán de la manera tradicional.
+          </p>
+          <div class="botonesArticulos">
+            <a href="https://www.justiciajujuy.gov.ar/acordadas/acordada-86-2020/" target="_blank" >Acordada 86/2000</a>
+            <a href="https://www.justiciajujuy.gov.ar/acordadas/acordada-86-2020/#my-capitulo1" target="_blank" >Definiciones generales</a>
+            <a href="https://www.justiciajujuy.gov.ar/acordadas/acordada-86-2020/#my-capitulo2" target="_blank" >Ingreso de demandas electronicas</a>
+            <a href="https://www.justiciajujuy.gov.ar/images/FirmaDigital/Manual%20de%20usuario%20-%20Nuevo%20Ingreso%20de%20Causas%20en%20MGE(v2).pdf" target="_blank" >Intructivos manual de uso</a>
+            <a href="http://" target="_blank" >Instructivos videos</a>
+            <a href="https://sigj.justiciajujuy.gov.ar/mentradas/sesiones/login" target="_blank" >Acceder al SIGJ</a>
+          </div>
+        </article>
+
+        <article id="presentacionDigital">
+          <h3>Presentación digital de Escritos Judiciales</h3>
+          <p>
+            Todas las presentaciones que realicen las partes, sus letrados y los auxiliares de justicia, serán efectuadas en forma electrónica a través del S.I.G.J. Las presentaciones tambien deberán realizarse adjuntando el escrito correspondiente con firma ológrafa digitalizado en formato PDF o con archivos adjuntos rubricados con firma electrónica y/o digital.
+          </p>
+
+          <div class="botonesArticulos">
+            <a href="https://www.justiciajujuy.gov.ar/acordadas/acordada-86-2020/" target="_blank">Acordada 86/2000</a>
+            <a href="https://www.justiciajujuy.gov.ar/acordadas/acordada-86-2020/#my-capitulo1" target="_blank" rel="noopener noreferrer">Definiciones generales</a>
+            <a href="https://www.justiciajujuy.gov.ar/acordadas/acordada-86-2020/#my-capitulo3" target="_blank">Presentaciones digitales</a>
+            <a href="https://sigj.justiciajujuy.gov.ar/mentradas/sesiones/register" target="_blank">Formulario de registro para Peritos y Auxiliares de Justicia</a>
+            <a href="https://www.justiciajujuy.gov.ar/images/FirmaDigital/Manual_presentaci%C3%B3n_escritos_electronicos_-_abogado.pdf" target="_blank">Instructivos manual de uso</a>
+            <a href="https://www.justiciajujuy.gov.ar/informativa/acordada-18-2022-implementacion-gradual" target="_blank">Implementacion gradual en los fueros</a>
+            <a href="https://sigj.justiciajujuy.gov.ar/mentradas/sesiones/login" target="_blank" >Acceder al SIGJ</a>
+          </div>
+        </article>
+
+        <article id="notificacionesElectronicas">
+          <h3>Notificaciones Electrónicas</h3>
+          <p>
+            Las resoluciones indicadas en los artículos 155 del Código Procesal Civil; 193 del Código Procesal Penal, 34 del Código Procesal del Trabajo, y sus concordantes según la naturaleza y tipo de proceso, se notificarán a través del Sistema Integral de Gestión Judicial (S.I.G.J.) ; con excepción de toda otra notificación que corresponda efectuarse en el domicilio real y las que, por disposición del juez o tribunal, deban ser notificadas por otro medio.
+          </p>
+
+          <div class="botonesArticulos">
+            <a href="http://" target="_blank" rel="noopener noreferrer">Acordada 86/2000</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Definiciones generales</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Ingreso de demandas electronicas</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Intructivos manual de uso</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Instructivos videos</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Acceder al SIGJ</a>
+          </div>
+        </article>
+
+        <article id="diligenciasColaborativas">
+          <h3>Diligencias Colaborativas</h3>
+          <p>
+            Permite a los abogados y defensores oficiales, elaborar y presentar digitalmente, cédulas de notificación, mandamientos y oficios colaborativos previstos en los artículos 50 y 72 del C.P.C., en las dependencias judiciales habilitadas con los procedimientos digitales. Una vez recibidas las diligencias, magistrados y secretarios las controlan y devuelven firmadas electrónicamente, para que los letrados las impriman y presenten en los organismos correspondientes
+          </p>
+
+          <div class="botonesArticulos">
+            <a href="http://" target="_blank" rel="noopener noreferrer">Acordada 86/2000</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Definiciones generales</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Ingreso de demandas electronicas</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Intructivos manual de uso</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Instructivos videos</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Acceder al SIGJ</a>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <div class="card-direccion">
+          <h4>Visitanos en...</h4>
+          <div class="direccion-texto">
+            <h3>San Salvador de Jujuy</h3><br>
+            <h5>Dirección: Dr. José Martearena 45, B° Centro</h5>
+            <h5>Horario de atención: 9:00AM - 6:00PM</h5>
+          </div>
+
+          <div class="direccion-ubicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5146.984387678628!2d-65.2909388137796!3d-24.190398925100265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses!2sar!4v1712689106276!5m2!1ses!2sar" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
-
-      <aside>
-        <div class="slideshow">
-
-          <img src="./img/publicidad-hotel.png" alt="Publicidad Hotel" class="slide">
-          <img src="./img/publicidad-panaderia.png" alt="Publicidad Panaderia" class="slide">
-          <img src="./img/publicidad-turismo.png" alt="publicidad Turismo" class="slide">
-        </div>
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/QaoyPjTCEXM?si=RrKtmbbYstywmJhu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </aside>
     </div>
 
     <footer>

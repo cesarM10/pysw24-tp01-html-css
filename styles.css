@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap");
+/* Font para el h1 de la pagina */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
 /* link paleta de colores */
 /* https://colorhunt.co/palette/fda403e8751a898121e5c287 */
@@ -6,6 +8,12 @@
 .museomoderno {
   font-family: "MuseoModerno", sans-serif;
   font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -28,9 +36,9 @@ ul li {
   list-style-type: none;
 }
 nav {
-  padding: 0.5em;
-  background-color: orange;
+  background-color: rgb(0, 0, 0);
   display: flex;
+  align-items: center;
 }
 
 nav ul {
@@ -41,7 +49,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 nav ul li a {
@@ -60,136 +68,199 @@ nav ul li:hover {
   flex-direction: row;
   padding: 1em;
   align-items: baseline;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
-header {
-  background-image: url("./img/header2Jujuy.jpg");
-  /* filter: blur(10px); */
-  height: 50vh;
-
+.container {
+  background-image: url("./img/fondo.jpg"); 
   background-size: cover;
-  background-position: 0;
+  background-attachment: fixed; /* Fija el fondo para que no se desplace con el contenido */
+  height: 100%; 
+  overflow-y: auto; /* Permite desplazar el contenido verticalmente*/
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-header h2 {
-  font-size: 5em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
-}
-
-header p {
-  font-size: 1.5em;
-  margin-left: 2em;
-  margin-right: 2em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
+header hgroup {
+  font-size: 200%;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .container {
   display: flex;
 }
+
 section {
-  width: 80vw;
-  height: auto;
-  background-color: rgb(229, 194, 135);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+section h3 {
+  font-size: 200%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.a-link {
+  text-decoration: none;
+  color: inherit;
+
+  margin: 1em;
+}
+.card {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* Estilos para el contenedor del texto */
+.text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; /* Doble del ancho para contener ambos textos */
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: transform 0.5s ease;
+  background-color: rgb(71, 161, 221);
+}
+
+/* Estilos para los textos */
+.text-container .frente {
+  margin: 0;
+  font-size: 20px;
+  width: 50%; /* Asegura que cada texto ocupe la mitad del contenedor */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section h3{
-  font-size: 3.5em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
+
+.text-container .oculto {
+  width: 50%;
+  padding-left: 2em;
 }
 
-.tarjeta {
-  background-color: rgb(160, 76, 20);
-  width: 80%;
-  height: max-content;
+.card:hover .text-container {
+  background-color: rgb(12, 15, 172);
+  transform: translateX(-50%);
+}
+
+/* Estilos para el contenido oculto */
+.card .text-container .oculto:last-child {
+  opacity: 1;
+  align-items: center;
+}
+
+.card .text-container img {
+  width: 20%;
+}
+
+.card .pie {
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+  z-index: 1;
+  width: 100%;
+  height: 3em;
+  color: white;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.frente p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 0 1em 0;
+}
+
+article {
+  background-color: rgba(128, 128, 128, 0.712);
+  padding: 2em;
+  margin: 1em 0;
+}
+
+.botonesArticulos {
+  width: 100%;
+  height: 150px;
   display: flex;
-  border: 2px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 12px;
-  margin: 1em;
-  overflow: hidden;
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.514); /* Definir sombra */
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.botonesArticulos a {
+  text-decoration: none;
+  color: white;
+  background-color: lightblue;
+  padding: 0.5em 1em;
+  border-radius: 5px;
 }
 
-.tarjeta img {
-  width: 300px;
-  object-fit: cover;
+.botonesArticulos a:hover {
+  background-color: blue;
 }
 
-.tarjeta .texto{
-  padding: 1em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
-}
-
-.texto h4{
-font-size: 1.8em;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
-}
-
-.texto p{
-  font-size: 1.1em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Definición de la sombra */
-}
-
-
-aside{
-  background-color: rgb(137, 129, 33);
-}
-
-.slideshow {
-  width: 25vw; 
-  height: 100vh; 
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 1em;
-}
-
-.slide {
+.card-direccion {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  background-size: cover; /* Ajusta la imagen para cubrir completamente el slide */
-  animation: slide 10s infinite alternate; 
+  height: 400px;
+  background-color: rgb(33, 33, 90);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.slide:nth-child(1) {
-  animation: slide 15s infinite 0s alternate; 
-}
-
-.slide:nth-child(2) {
-  animation: slide 15s infinite 5s alternate; 
-}
-
-.slide:nth-child(3) {
-  animation: slide 15s infinite 10s alternate; 
-}
-
-@keyframes slide {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-aside iframe{
-  position: relative;
+.card-direccion h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100%;
+  height: 40%;
+  color: grey;
+  font-size: 5em;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;
+}
+.direccion-texto {
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  height: 200px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-right: 3%;
+}
+
+.direccion-texto h3{
+  color: black;
+  font-size: 2.5em;
+  text-align: center;
+}
+.direccion-texto h5{
+  color: black;
+  font-size: 1.5em;
+  padding-left: 5%;
+}
+
+.direccion-ubicacion {
+  width: 40%;
+  height: 200px;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 footer {
-  background-color: rgb(232, 117, 26);
+  background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -204,7 +275,7 @@ footer ul li {
   margin: 0;
   padding: 0;
   text-align: center;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 footer ul li a {
   font-size: 1.5em;
@@ -214,16 +285,19 @@ footer ul li a {
 }
 
 footer ul li:hover {
-  color: rgb(253, 164, 3);
-  transform: scale(1.2); 
+  transform: scale(1.2);
+}
+
+footer ul li a:hover {
+  color: rgb(0, 119, 181);
 }
 
 footer img {
   width: 60px;
   height: 60px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 footer a img:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
