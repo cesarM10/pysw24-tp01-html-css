@@ -16,58 +16,54 @@ section {
   flex-direction: row;
 }
 
-.slideshow {
+header {
   width: 100%;
-  height: 30vh;
+  height: 300px;
   overflow: hidden;
   position: relative;
+  background-color: white;
 }
 
-.slide {
-  width: 100%;
-  height: 100%;
+.header-img {
   position: absolute;
-  background-repeat: no-repeat;
-  animation: slide 20s infinite alternate;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  transform: translateY(-10%);
 }
 
-.slide:nth-child(1) {
-  animation-delay: 0s; /* Inicia en el segundo 0 */
+#img1 {
+  opacity: 1;
 }
 
-.slide:nth-child(2) {
-  animation-delay: 5s; /* Inicia en el segundo 5 */
-}
-
-.slide:nth-child(3) {
-  animation-delay: 10s; /* Inicia en el segundo 10 */
-}
-
-.slide:nth-child(4) {
-  animation-delay: 15s; /* Inicia en el segundo 15 */
-}
-
-.slide:nth-child(5) {
-  animation-delay: 20s; /* Inicia en el segundo 20 */
-}
-
-.slide:nth-child(6) {
-  animation-delay: 10s; /* Inicia en el segundo 25 */
-}
-
-@keyframes slide {
-  0% {
+@keyframes changeImage {
+  0%,
+  33.3% {
     opacity: 0;
   }
-  20% {
+  33.3%,
+  66.6% {
     opacity: 1;
   }
-  80% {
-    opacity: 1;
-  }
+  66.6%,
   100% {
     opacity: 0;
   }
+}
+
+.header-img:nth-child(1) {
+  animation: changeImage 9s infinite;
+}
+
+.header-img:nth-child(2) {
+  animation: changeImage 9s infinite;
+  animation-delay: 3s;
+}
+
+.header-img:nth-child(3) {
+  animation: changeImage 9s infinite;
+  animation-delay: 6s;
 }
 
 aside {
@@ -116,7 +112,7 @@ aside {
   width: 100%;
   text-align: center;
 }
-.encabezado h2{
+.encabezado h2 {
   color: rgb(3, 109, 180);
   font-size: 3em;
 }
@@ -132,11 +128,11 @@ aside {
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.514);
 }
 
-.noticia:hover{
+.noticia:hover {
   transform: scale(1.1);
 }
 
-.noticia a{
+.noticia a {
   text-decoration: none;
   color: rgb(3, 109, 180);
 }
@@ -151,12 +147,13 @@ aside {
   font-size: 0.8em;
 }
 
-.cuerpo-noticia h3{
+.cuerpo-noticia h3 {
   color: rgb(3, 109, 180);
   padding: 10px 0;
 }
 
-.cuerpo-noticia h4, h5{
+.cuerpo-noticia h4,
+h5 {
   color: grey;
   padding: 5px 0;
 }
